@@ -1,4 +1,24 @@
+@import "variables";
+
 .transition(@transition) {
-    -webkit-transition: @transition;
-    transition: @transition;
+  -webkit-transition: @transition;
+  transition: @transition;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.active-line(@top,@bottom) {
+  display: block;
+  content: '';
+  width: 70px;
+  height: 6px;
+  position: absolute;
+  top: @top;
+  bottom: @bottom;
+  left: ~"calc(50% - 35px)";
+  background-color: @selector-color;
 }
