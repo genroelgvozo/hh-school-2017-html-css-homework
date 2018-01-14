@@ -111,7 +111,7 @@
         </div>
     </section>
 
-    <section class="container article-container">
+    <section class="container articles">
         <div class="row justify-content-center">
             <div class="col-8 intro-article">
                 <h2 class="title title_level-2">Featured Articles</h2>
@@ -126,10 +126,10 @@
 
 
         <div class="row slider">
-            <div class="col-4">
-                <div class="article article_selected">
+            <article class="col-4">
+                <div class="articles__item articles__item_selected">
                     <h3 class="title title_article">Comic</h3>
-                    <p class="article__text">A million ways to die in the wild wild wild west</p>
+                    <p class="articles__text">A million ways to die in the wild wild wild west</p>
                     <div class="person">
                         <img src="img/persons/photo1.png" class="person__photo"/>
                         <div class="person__info">
@@ -139,12 +139,12 @@
                     </div>
                 </div>
 
-            </div>
+            </article>
 
-            <div class="col-4">
-                <div class="article">
+            <article class="col-4">
+                <div class="articles__item">
                     <h3 class="title title_article">Lifestyle</h3>
-                    <p class="article__text">The most comfortable chair comes with no backpain</p>
+                    <p class="articles__text">The most comfortable chair comes with no backpain</p>
                     <div class="person">
                         <img src="img/persons/photo2.png" class="person__photo"/>
                         <div class="person__info">
@@ -153,13 +153,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
 
-            <div class="col-4">
-                <div class="article">
+            <article class="col-4">
+                <div class="articles__item">
                     <h3 class="title title_article">Travel</h3>
-                    <p class="article__text">journey to the center of the earth with jefferson</p>
+                    <p class="articles__text">journey to the center of the earth with jefferson</p>
                     <div class="person">
                         <img src="img/persons/photo3.png" class="person__photo"/>
                         <div class="person__info">
@@ -168,31 +168,52 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
+            <button class="slider__arrow">
+                <div class="icon icon_arrow"></div>
+            </button>
         </div>
     </section>
 
     <section class="substrate">
         <div class="container">
             <div class="row justify-content-center clients">
-                <h2 class="title title_level-2">Clients</h2>
-                <div class="w-100"></div>
-                <div class="slider">
-                    <img class="clients__img" src="img/client1.png">
-                    <img class="clients__img" src="img/client1.png">
-                    <img class="clients__img" src="img/client1.png">
-                    <img class="clients__img" src="img/client1.png">
-                    <img class="clients__img" src="img/client1.png">
-                    <img class="clients__img" src="img/client1.png">
+                <div class="col-auto">
+                    <h2 class="title title_level-2">Clients</h2>
                 </div>
-
+                <div class="w-100"></div>
+                <div class="col-auto">
+                    <ul class="slider">
+                        <li class="slider__item">
+                            <img class="clients__image" src="img/client1.png">
+                        </li>
+                        <li class="slider__item">
+                            <img class="clients__image" src="img/client1.png">
+                        </li>
+                        <li class="slider__item">
+                            <img class="clients__image" src="img/client1.png">
+                        </li>
+                        <li class="slider__item">
+                            <img class="clients__image" src="img/client1.png">
+                        </li>
+                        <li class="slider__item">
+                            <img class="clients__image" src="img/client1.png">
+                        </li>
+                        <li class="slider__item">
+                            <img class="clients__image" src="img/client1.png">
+                        </li>
+                        <button class="slider__arrow">
+                            <div class="icon icon_arrow"></div>
+                        </button>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container">
         <div class="row justify-content-center">
-            <div class="col-8 intro-article intro-article_under-line">
+            <div class="col-8 intro-article intro-article_featured">
                 <h2 class="title title_level-2">Portfolio & Screenshots</h2>
                 <p class="text text_level-2">
                     The gentlemen who rented the room would sometimes take their evening meal at home in the living room
@@ -201,39 +222,49 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <ul class="portfolio">
-                <li class="portfolio__item text text_level-3">Art</li>
-                <li class="portfolio__item text text_level-3">Mystery</li>
-                <li class="portfolio__item text text_level-3">Illusion</li>
-                <li class="portfolio__item text text_level-3">Travel</li>
-                <li class="portfolio__item text text_level-3">Paintings</li>
-            </ul>
-        </div>
-    </section>
-    <section class="screenshots">
-        <img class="screenshots__item" src="img/screenshots/screen1.png">
-        <img class="screenshots__item" src="img/screenshots/screen2.png">
-        <img class="screenshots__item" src="img/screenshots/screen3.png">
-        <img class="screenshots__item" src="img/screenshots/screen4.png">
-    </section>
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="switcher">
-                <button class="switcher__item"></button>
-                <button class="switcher__item"></button>
-                <button class="switcher__item switcher__item_selected"></button>
-                <button class="switcher__item"></button>
+            <div class="col-auto">
+                <ul class="portfolio">
+                    <li class="portfolio__item text text_level-3">Art</li>
+                    <li class="portfolio__item text text_level-3">Mystery</li>
+                    <li class="portfolio__item text text_level-3">Illusion</li>
+                    <li class="portfolio__item text text_level-3">Travel</li>
+                    <li class="portfolio__item text text_level-3">Paintings</li>
+                </ul>
             </div>
         </div>
     </section>
 
+    <section class="screenshots">
+        <ul class="screenshots__list">
+            <li class="screenshots__item">
+                <img class="screenshots__image" src="img/screenshots/screen2.png">
+            </li>
+            <li class="screenshots__item">
+                <img class="screenshots__image" src="img/screenshots/screen1.png">
+            </li>
+            <li class="screenshots__item">
+                <img class="screenshots__image" src="img/screenshots/screen3.png">
+            </li>
+            <li class="screenshots__item">
+                <img class="screenshots__image" src="img/screenshots/screen4.png">
+            </li>
+        </ul>
+        <ul class="switcher">
+            <li class="switcher__item"></li>
+            <li class="switcher__item"></li>
+            <li class="switcher__item switcher__item_selected"></li>
+            <li class="switcher__item"></li>
+        </ul>
+    </section>
     <section class="substrate substrate_dark">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-8 quote">
                     <div class="icon icon_quote"></div>
-                    <p class="text text_level-2">Happiness cannot be traveled to, owned, earned, or worn. It is the
-                        spiritual experience of living every minute with love, grace & gratitude</p>
+                    <blockquote class="text text_level-2">Happiness cannot be traveled to, owned, earned, or worn. It is
+                        the
+                        spiritual experience of living every minute with love, grace & gratitude
+                    </blockquote>
                     <div class="text quote__author">Denis Waitley</div>
                 </div>
             </div>
@@ -254,29 +285,29 @@
             <div class="col-3">
                 <div class="member">
                     <img src="img/members/member1.png" class="member__photo">
-                    <div class="member__name">James Philly</div>
-                    <div class="member__position">Lead Developer</div>
+                    <h5 class="member__name">James Philly</h5>
+                    <h6 class="member__position">Lead Developer</h6>
                 </div>
             </div>
             <div class="col-3">
                 <div class="member">
                     <img src="img/members/member2.png" class="member__photo">
-                    <div class="member__name">Cactus Jack</div>
-                    <div class="member__position">3D Model Designer</div>
+                    <h5 class="member__name">Cactus Jack</h5>
+                    <h6 class="member__position">3D Model Designer</h6>
                 </div>
             </div>
             <div class="col-3">
                 <div class="member">
                     <img src="img/members/member3.png" class="member__photo">
-                    <div class="member__name">Jack Sparrow</div>
-                    <div class="member__position">Master of All Trade</div>
+                    <h5 class="member__name">Jack Sparrow</h5>
+                    <h6 class="member__position">Master of All Trade</h6>
                 </div>
             </div>
             <div class="col-3">
                 <div class="member">
                     <img src="img/members/member4.png" class="member__photo">
-                    <div class="member__name">Yaga Squarehead</div>
-                    <div class="member__position">Manages Money</div>
+                    <h5 class="member__name">Yaga Squarehead</h5>
+                    <h6 class="member__position">Manages Money</h6>
                 </div>
             </div>
         </div>
@@ -290,38 +321,38 @@
                     <div class="facts__table">
                         <div class="row">
                             <div class="col">
-                                <div class="facts__num">
+                                <h5 class="facts__num">
                                     110
-                                </div>
-                                <div class="facts__info">
+                                </h5>
+                                <h6 class="facts__info">
                                     successful projects
-                                </div>
+                                </h6>
                             </div>
                             <div class="col">
-                                <div class="facts__num">
+                                <h5 class="facts__num">
                                     25
-                                </div>
-                                <div class="facts__info">
+                                </h5>
+                                <h6 class="facts__info">
                                     awesome clients
-                                </div>
+                                </h6>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="facts__num">
+                                <h5 class="facts__num">
                                     30
-                                </div>
-                                <div class="facts__info">
+                                </h5>
+                                <h6 class="facts__info">
                                     open source plugins
-                                </div>
+                                </h6>
                             </div>
                             <div class="col">
-                                <div class="facts__num">
+                                <h5 class="facts__num">
                                     13
-                                </div>
-                                <div class="facts__info">
+                                </h5>
+                                <h6 class="facts__info">
                                     open source themes
-                                </div>
+                                </h6>
                             </div>
                         </div>
                     </div>
@@ -330,73 +361,73 @@
         </div>
     </section>
     <section class="container blog">
-        <div class="row post">
+        <article class="row post">
             <div class="col-6">
                 <div class="post__content">
                     <div class="text text_meta">Travel / 21st March, 2014</div>
-                    <div class="title title_level-2">A New Product is Coming</div>
+                    <h2 class="title title_level-2">A New Product is Coming</h2>
                     <p class="text text_level-4">The office assistant was the boss's man, spineless, and with no
                         understanding. What about if he reported sick? But that would be extremely
                         strained and suspicious as in fifteen years of service Gregor had never.</p>
                 </div>
             </div>
             <div class="col-6">
-                <img src="img/blog/img1.png" class="post__img">
+                <img src="img/blog/img1.png" class="post__image">
             </div>
-        </div>
-        <div class="row post">
+        </article>
+        <article class="row post">
             <div class="col-6">
-                <img src="img/blog/img2.png" class="post__img">
+                <img src="img/blog/img2.png" class="post__image">
             </div>
             <div class="col-6">
                 <div class="post__content">
                     <div class="text text_meta">Gadget / 3rd March, 2014</div>
-                    <div class="title title_level-2">Jimmy's New Xbox Controller</div>
+                    <h2 class="title title_level-2">Jimmy's New Xbox Controller</h2>
                     <p class="text text_level-4">The office assistant was the boss's man, spineless, and with no
                         understanding. What about if he reported sick? But that would be extremely
                         strained and suspicious as in fifteen years of service Gregor had never.</p>
                 </div>
             </div>
 
-        </div>
-        <div class="row post">
+        </article>
+        <article class="row post">
             <div class="col-6">
                 <div class="post__content">
                     <div class="text text_meta">Travel / 21st March, 2014</div>
-                    <div class="title title_level-2">A New Product is Coming</div>
+                    <h2 class="title title_level-2">A New Product is Coming</h2>
                     <p class="text text_level-4">The office assistant was the boss's man, spineless, and with no
                         understanding. What about if he reported sick? But that would be extremely
                         strained and suspicious as in fifteen years of service Gregor had never.</p>
                 </div>
             </div>
             <div class="col-6">
-                <img src="img/blog/img3.png" class="post__img">
+                <img src="img/blog/img3.png" class="post__image">
             </div>
-        </div>
+        </article>
     </section>
 
     <section class="substrate next-posts">
         <div class="container">
             <div class="slider">
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <article class="col-4">
                         <div class="next-posts__item">
                             <h4 class="title title_tweet">Another Day In Paradise</h4>
                             <div class="text text_meta">Travel / 21st March, 2014</div>
                         </div>
-                    </div>
-                    <div class="col-4">
+                    </article>
+                    <aticle class="col-4">
                         <div class="next-posts__item">
                             <h4 class="title title_tweet">Jimmy's New Book on Aliens</h4>
                             <div class="text text_meta">Personal / 21st March, 2014</div>
                         </div>
-                    </div>
-                    <div class="col-4">
+                    </aticle>
+                    <article class="col-4">
                         <div class="next-posts__item">
                             <h4 class="title title_tweet">Sarah's New House</h4>
                             <div class="text text_meta">Personal / 21st March, 2014</div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -407,7 +438,6 @@
             <div class="col-8">
                 <div class="tweet">
                     <div class="icon icon_twitter"></div>
-                    <div class="w-100"></div>
                     <img class="tweet__photo" src="img/persons/photo2.png">
                     <p class="text text_level-2">Happiness cannot be traveled to, owned, earned, or worn.
                         It is the spiritual experience of living every minute with love, grace & gratitude.</p>
@@ -419,84 +449,135 @@
 </main>
 
 <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-5">
-                <h4 class="footer__title">Unicorn</h4>
-                <p class="text text_level-4">One morning, when Gregor Samsa woke from troubled dreams, he found himself
-                    transformed in his bed into a horrible vermin. He lay on his</p>
-                <form id="unicorn" action="" class="footer__form">
+    <form id="unicorn" action="" class="footer__form">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h4 class="footer__title">Unicorn</h4>
+                    <p class="text text_level-4">One morning, when Gregor Samsa woke from troubled dreams, he found
+                        himself
+                        transformed in his bed into a horrible vermin. He lay on his</p>
+
                     <div class="row">
                         <div class="col">
-                            <input type="email" placeholder="EMAIL" name="email" class="footer__input">
+                            <input type="email" placeholder="email" name="email" class="footer__input">
                         </div>
                         <div class="col">
-                            <input type="text" placeholder="SUBJECT" name="subj" class="footer__input">
+                            <input type="text" placeholder="subject" name="subj" class="footer__input">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <input type="text" placeholder="MESSAGE" name="msg" class="footer__input">
+                            <input type="text" placeholder="message" name="msg" class="footer__input">
                         </div>
                     </div>
-                </form>
+
+                </div>
+                <nav class="col-2 offset-1">
+                    <h4 class="footer__title footer__title_level-2">Links</h4>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Home</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">About</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Services</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Menu</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Restaurants</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Work Hours</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Call Hours</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="col-2">
+                    <h4 class="footer__title footer__title_level-2">Friends</h4>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Home</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">About</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Services</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Menu</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Restaurants</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="col-2">
+                    <h4 class="footer__title footer__title_level-2">Social</h4>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Facebook</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Twitter</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Github</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Pinterest</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Google Plus</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Dribbble</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Flickr</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Others</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-2 offset-1">
-                <h4 class="footer__title footer__title_level-2">Links</h4>
-                <ul class="footer-nav">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Home</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Services</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Menu</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Restaurants</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Work Hours</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Call Hours</a></li>
-                </ul>
+            <div class="row">
+                <div class="col">
+                    <button class="footer__input" type="submit">SEND &#9205;</button>
+                </div>
             </div>
-            <div class="col-2">
-                <h4 class="footer__title footer__title_level-2">Friends</h4>
-                <ul class="footer-nav">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Home</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Services</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Menu</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Restaurants</a></li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <h4 class="footer__title footer__title_level-2">Social</h4>
-                <ul class="footer-nav">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Facebook</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Twitter</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Github</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Pinterest</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Google Plus</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Dribbble</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Flickr</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Others</a></li>
-                </ul>
+            <div class="row justify-content-between">
+                <div class="col align-self-end">
+                    <p class="text text_level-4">One morning, when Gregor Samsa woke from troubled dreams, he found
+                        <br>&#169;2015 Your Awesome Company</p>
+                </div>
+                <div class="col-auto align-self-end">
+                    <ul class="footer-nav footer-nav_horizontal">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Terms</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Privacy policy</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Contact</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Job</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <button class="footer__input" form="unicorn" type="submit">SEND &#9205;</button>
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col align-self-end">
-                <p class="text text_level-4">One morning, when Gregor Samsa woke from troubled dreams, he found
-                    <br>&#169;2015 Your Awesome Company</p>
-            </div>
-            <div class="col-auto align-self-end">
-                <ul class="footer-nav footer-nav_horizontal">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Terms</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Privacy policy</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Contact</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Job</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </form>
 </footer>
 </body>
 </html>

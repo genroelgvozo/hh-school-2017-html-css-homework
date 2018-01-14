@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+
+.articles {
+  padding-bottom: 100px;
+}
+
+.articles__item {
+  padding: 60px 50px 50px 40px;
+  height: 350px;
+  background-color: @dark-background-color;
+  color: @color-text-bright;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__item_selected::after {
+  .active-line(0, auto);
+}
+
+.articles__text {
+  font-size: 22px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
